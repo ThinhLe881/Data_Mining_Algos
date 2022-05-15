@@ -1,1 +1,1 @@
-# finding-frequent-itemsets-algorithms
+# Finding Frequent Itemsets Algorithms - Thinh Le
