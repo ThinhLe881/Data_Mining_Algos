@@ -1,8 +1,9 @@
-# Finding Frequent Itemsets Algorithms - Thinh Le
+# Movie Recommendation Algorithms - Thinh Le
+# (Finding Frequent Itemsets Algorithms)
 
 ## Datasets:
 
--   **Retail:** [Link](http://fimi.uantwerpen.be/data/retail.dat)
+-   **Retail:** [Link](http://fimi.uantwerpen.be/data/retail.dat) 
 
 -   **Netflix:** [Link](https://drive.google.com/file/d/1EX_2Pkid6EC4H-4KN0kP_S_89GKaTnXo)
 
