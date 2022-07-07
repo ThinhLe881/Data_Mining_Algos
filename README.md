@@ -3,9 +3,11 @@
 
 ## Datasets:
 
--   **Retail:** [Link](http://fimi.uantwerpen.be/data/retail.dat) 
+-   **Retail:** [Link](http://fimi.uantwerpen.be/data/retail.dat)
++ Over 500000 items from over 88000 users
 
 -   **Netflix:** [Link](https://drive.google.com/file/d/1EX_2Pkid6EC4H-4KN0kP_S_89GKaTnXo)
++ Over millions items from over 480000 users
 
 ## How to run:
 
