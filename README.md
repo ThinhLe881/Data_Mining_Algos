@@ -1,5 +1,4 @@
-# Movie Recommendation Algorithms - Thinh Le
-# (Finding Frequent Itemsets Algorithms)
+# Frequent Itemsets Mining - Thinh Le
 
 ## Datasets:
 
