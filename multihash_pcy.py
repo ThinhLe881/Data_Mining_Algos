@@ -4,6 +4,7 @@ import itertools
 import sys
 import math
 import time
+import argparse
 
 
 def hash_1(a, b, N):
@@ -87,9 +88,15 @@ def pcy(baskets, min_support):
 
 
 def main():
-    infile = sys.argv[1]
-    scale = float(sys.argv[2])
-    threshold = float(sys.argv[3])
+    parser = argparse.ArgumentParser(description='Multi-hash PCY Algorithm')
+    parser.add_argument('infile', metavar='infile', type=str, help='The input dataset (.txt, .dat, .data)')
+    parser.add_argument('scale', metavar='scale', type=str, help='The scale of the dataset (eg. 0.1 for 10%, 1 for the entire dataset)')
+    parser.add_argument('threshold', metavar='threshold', type=str, help='The threshold (eg. 0.01 for 1%)')
+    args = parser.parse_args()
+
+    infile = args.infile
+    scale = float(args.scale)
+    threshold = float(args.threshold)
 
     outfile = "output_multihash_pcy_" + \
         str(scale) + "_" + str(threshold) + "_" + infile

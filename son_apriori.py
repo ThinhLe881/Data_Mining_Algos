@@ -3,6 +3,7 @@ import itertools
 import sys
 import math
 import time
+import argparse
 
 
 def samples_divider(baskets, sample_size):
@@ -92,10 +93,17 @@ def son_apriori(baskets, threshold, sample_size):
 
 
 def main():
-    infile = sys.argv[1]
-    scale = float(sys.argv[2])
-    sample_size = float(sys.argv[3])
-    threshold = float(sys.argv[4])
+    parser = argparse.ArgumentParser(description='SON Apriori Algorithm')
+    parser.add_argument('infile', metavar='infile', type=str, help='The input dataset (.txt, .dat, .data)')
+    parser.add_argument('scale', metavar='scale', type=str, help='The scale of the dataset (eg. 0.1 for 10%, 1 for the entire dataset)')
+    parser.add_argument('sample_size', metavar='sample_size', type=str, help='The size of the sample set (eg. 0.1 for 10%, 1 for the entire dataset)')
+    parser.add_argument('threshold', metavar='threshold', type=str, help='The threshold (eg. 0.01 for 1%)')
+    args = parser.parse_args()
+
+    infile = args.infile
+    scale = float(args.scale)
+    sample_size = float(args.sample_size)
+    threshold = float(args.threshold)
 
     outfile = "output_son_apriori_" + str(scale) + "_" + str(sample_size) + "_" + \
         str(threshold) + "_" + infile
