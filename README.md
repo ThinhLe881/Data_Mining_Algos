@@ -1,4 +1,6 @@
-# Frequent Itemsets Mining - Thinh Le
+# Data Mining Algorithms
+
+Implementation of several well-known algorithms in Frequent Itemset Mining methods.
 
 ## Datasets:
 
@@ -6,7 +8,7 @@
     -   Over 500000 items from over 88000 users
 
 -   **Netflix:** [Link](https://drive.google.com/file/d/1EX_2Pkid6EC4H-4KN0kP_S_89GKaTnXo)
-    -   Over millions items from over 480000 users
+    -   Over millions of items from over 480000 users
 
 ## How to run:
 
